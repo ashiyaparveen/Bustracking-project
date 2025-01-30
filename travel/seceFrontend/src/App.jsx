@@ -7,6 +7,7 @@ import Contact from './components/FunctionalComponents/Contact';
 import Navbar from './components/FunctionalComponents/Navbar';
 import Signup from './components/FunctionalComponents/Signup';
 import Login from './components/FunctionalComponents/Login';
+import BusTracking from './components/FunctionalComponents/Tracking';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,7 +26,7 @@ function App() {
         <Route path="/about" element={isLoggedIn ? <About /> : <Login onLogin={handleLogin} />} />
         <Route path="/gallery" element={isLoggedIn ? <Gallery page="Gallery" image="SECE Logo" /> : <Login onLogin={handleLogin} />} />
         <Route path="/contact" element={isLoggedIn ? <Contact /> : <Login onLogin={handleLogin} />} />
-
+        <Route path="/tracking" element={isLoggedIn ? <BusTracking /> : <Login onLogin={handleLogin} />} />
 
         <Route path="/signup" element={isLoggedIn ? <Home /> : <Signup />} />
         
