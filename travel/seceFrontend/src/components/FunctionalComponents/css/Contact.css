@@ -1,0 +1,33 @@
+.contact-container {
+    background-color: rgb(203, 143, 12);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0; 
+    color: #ffffff;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+  }
+  
+  .contact-content {
+    background-color: rgba(235, 235, 235, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Adjust the width for responsiveness */
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .contact-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-content p {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block; /* Ensure each paragraph is displayed in separate lines */
+  }
+  
